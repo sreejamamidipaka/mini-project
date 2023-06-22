@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body
+{
+  font-family: "Roboto", sans-serif;
+}
+/* Styles for the Task Manager application */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-group input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-list li:last-child {
+  margin-bottom: 0;
+}
+
+.task-list li .task-title {
+  flex-grow: 1;
+}
+
+.task-list li button {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-list li.completed {
+  background-color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.project-header {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.project-list li {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project-list li:last-child {
+  margin-bottom: 0;
+}
+
+.project-list li .project-title {
+  font-weight: bold;
+}
+
+.project-list li .project-description {
+  color: #777;
+  margin-top: 5px;
+}

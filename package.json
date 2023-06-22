@@ -1,28 +1,51 @@
 {
-  "name": "mern-task-manager-backend",
-  "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
-  },
-  "keywords": [
-    "Task manager",
-    "Tasks"
-  ],
-  "author": "Aayush",
-  "license": "ISC",
-  "description": "The backend part of simple task manager with user authentication",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "axios": "^1.4.0",
-    "bcrypt": "^5.0.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.1.4",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^7.3.0"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.3.0",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.3",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
   }
 }
